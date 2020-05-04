@@ -20,3 +20,11 @@ MyRepository
 年龄与产品现金流现值的数值关系；（15 分）
 5. 根据上述结果， 对该商业保险的支出收入特征、 以及是否值得购买进行分析。
 （5 分）
+-------------------------------------------------------------------------------
+收入函数InsureInFlow：参数为投保起始年龄，死亡年龄，每期投保金额，贴现率
+def InsureInFlowPV(StartPayAge=25 , DeadAge=100, OutPayment =8000, Rate =0.03):
+    return PV
+支出函数InsureOutFlow：参数为投保起始年龄，投保结束年龄，死亡年龄，每期投保金额，贴现率
+def InsureOutFlowPV(StartPayAge=25, EndPayAge=50, DeadAge=100, OutPayment=8000, Rate=0.03):
+    return PV
+
