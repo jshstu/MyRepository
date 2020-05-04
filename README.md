@@ -24,7 +24,10 @@ MyRepository
 收入函数InsureInFlow：参数为投保起始年龄，死亡年龄，每期投保金额，贴现率
 def InsureInFlowPV(StartPayAge=25 , DeadAge=100, OutPayment =8000, Rate =0.03):
     return PV
+    
 支出函数InsureOutFlow：参数为投保起始年龄，投保结束年龄，死亡年龄，每期投保金额，贴现率
 def InsureOutFlowPV(StartPayAge=25, EndPayAge=50, DeadAge=100, OutPayment=8000, Rate=0.03):
     return PV
-
+--------------------------------------------------------------------------------
+numpy1.20后的版本将不支持np.pv, np.fv, np.npv函数，这些金融分析函数会独立成一个新的
+第三方库numpy_financial，新的第三方库里这三个函数的用法是一样的
